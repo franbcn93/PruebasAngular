@@ -1,0 +1,21 @@
+<h1>{{titulo}} </h1>
+
+<h4>Probando el *ngIf</h4>
+  <form action="">
+    <input type="text" name="nombre" [(ngModel)]="nombre"><br>
+    <input type="text" name="apellido" [(ngModel)]="apellido"><br>
+    <input type="submit" value="Registrar" (click)="registerUser()"><br>
+  </form>
+
+<br>
+<p *ngIf="registrado; else sinRegistrar">{{mensaje}} con el nombre: {{nombre}} {{apellido}} </p>
+
+<ng-template #sinRegistrar><p>Nadie registardo</p></ng-template>
+
+<br>
+<h4>Probando el *ngFor</h4>
+  <ul>
+    <li *ngFor="let entrada of entradas">  {{entrada.tituloEntrada}} </li>
+  </ul>
+  <br>
+  <app-formulario></app-formulario>
