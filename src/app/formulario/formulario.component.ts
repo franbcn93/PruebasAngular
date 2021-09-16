@@ -27,6 +27,12 @@ export class FormularioComponent implements OnInit {
 
   }
 
+  arrayCaracteristicas = [''];
+
+  agregarCaracteristica(nuevaCaracteristica: string) {
+    this.arrayCaracteristicas.push(nuevaCaracteristica);
+  }
+
   cuadroNombre:string=""
   cuadroApellido:string=""
   cuadroCargo:string=""

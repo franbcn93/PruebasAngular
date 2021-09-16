@@ -1,5 +1,4 @@
 
-
 <div class="container">
     <div class="col">
         <h4>{{tituloListado}}</h4>
@@ -33,20 +32,10 @@
 </div>
 <br><br><br>
 
+<app-empleado-hijo-c *ngFor="let empleado of empleados; let i=index"
+[empleadoDeLista]="empleado" [indice]="i"></app-empleado-hijo-c>
 
 
 
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <div *ngFor="let empleado of empleados; let i=index">
-                Empleado: <strong>{{i}} </strong>
-                Nombre: <strong>{{empleado.nombre}} {{empleado.apellido}}</strong>
-                Cargo: <strong>{{empleado.cargo}}</strong> 
-                Salario: <strong>{{empleado.salario}}</strong>
-            </div>
-        </div>
-    </div>
-</div>
 
 <br><br><br>

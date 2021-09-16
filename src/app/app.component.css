@@ -1,4 +1,19 @@
 h1,
-h4 {
+h4,
+p {
   text-align: center;
+}
+
+.paraDirectores {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.btnRegistrar {
+  padding-top: 20px;
+}
+
+li {
+  margin-left: 60px;
 }
