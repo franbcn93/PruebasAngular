@@ -4,8 +4,6 @@
 
 You can see a small test of the project [Here](https://franbcn93.github.io/PruebasAngular/)
 
-.
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
 
 ## Development server
